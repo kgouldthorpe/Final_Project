@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Final Project</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="/style/style.css" title="style" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<style>
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #F0EFE2 url(dims.jpg) repeat;
+  color: #777;}
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;}
+
+img
+{ border: 0;}
+
+h1, h2, h3, h4, h5, h6 
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #43423F;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;}
+
+h2
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #1293EE;}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 120% arial, sans-serif;
+  color: #1293EE;}
+
+h5, h6
+{ font: italic 95% arial, sans-serif;
+  padding: 0 0 15px 0;
+  color: #000;}
+
+h6
+{ color: #362C20;}
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #FD5BFF;}
+
+a:hover
+{ text-decoration: none;}
+
+.left
+{ float: left;
+  width: auto;
+  margin-right: 10px;}
+
+.right
+{ float: right; 
+  width: auto;
+  margin-left: 10px;}
+
+.center
+{ display: block;
+  text-align: center;
+  margin: 20px auto;}
+
+blockquote
+{ margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;}
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ background: #1D1D1D url(header.png) repeat;
+  height: 240px;}
+
+#logo
+{ width: 825px;
+  position: relative;
+  height: 168px;}
+
+#logo #logo_text 
+{ position: absolute; 
+  top: 20px;
+  left: 0;}
+
+#logo h1, #logo h2
+{ font: normal 300% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;}
+
+#logo_text h1 a .logo_colour
+{ color: #1293EE;}
+
+#logo_text h2
+{ font-size: 100%;
+  padding: 4px 0 0 0;
+  color: #DDD;}
+
+#menubar
+{ width: 900px;
+  height: 72px;
+  padding: 0;
+  background: #1293EE;} 
+
+ul#menu, ul#menu li
+{ float: left;
+  margin: 0; 
+  padding: 0;}
+
+ul#menu li
+{ list-style: none;}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% arial, sans-serif;
+  display: block; 
+  float: left; 
+  height: 37px;
+  padding: 29px 26px 6px 26px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;} 
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: #FFF;
+  background: #0D66A5;}
+
+#site_content
+{ width: 837px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 20px 24px 20px 37px;
+  background: #FFF;} 
+
+.sidebar
+{ float: right;
+  width: 190px;
+  padding: 0 15px 20px 15px;}
+
+.sidebar ul
+{ width: 178px; 
+  padding: 4px 0 0 0; 
+  margin: 4px 0 30px 0;}
+
+.sidebar li
+{ list-style: none; 
+  padding: 0 0 7px 0; }
+
+.sidebar li a, .sidebar li a:hover
+{ padding: 0 0 0 40px;
+  display: block;
+  background: transparent url(link.png) no-repeat left center;} 
+
+.sidebar li a.selected
+{ color: #444;
+  text-decoration: none;} 
+
+#content
+{ text-align: left;
+  width: 595px;
+  padding: 0;}
+
+#content ul
+{ margin: 2px 0 22px 0px;}
+
+#content ul li
+{ list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;}
+
+#footer
+{ width: 900px;
+  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  height: 33px;
+  padding: 24px 0 5px 0;
+  text-align: center; 
+  background: #1293EE;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;}
+
+#footer a
+{ color: #FFF;
+  text-decoration: none;}
+
+#footer a:hover
+{ color: #FFF;
+  text-decoration: underline;}
+
+.search
+{ color: #5D5D5D; 
+  border: 1px solid #BBB; 
+  width: 134px; 
+  padding: 4px; 
+  font: 100% arial, sans-serif;}
+
+#colours
+{ height: 0px;
+  text-align: right;
+  padding: 66px 16px 0px 300px;}
+  
+.form_settings
+{ margin: 15px 0 0 0;}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 200px; 
+  text-align: left;}
+  
+.form_settings input, .form_settings textarea
+{ padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings .submit
+{ font: 100% arial; 
+  border: 1px solid; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #1293EE; 
+  color: #FFF;}
+
+.form_settings textarea, .form_settings select
+{ font: 100% arial; 
+  width: 299px;}
+
+.form_settings select
+{ width: 310px;}
+
+.form_settings .checkbox
+{ margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;}
+
+.separator
+{ width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;}
+  
+table
+{ margin: 10px 0 30px 0;}
+
+table tr th, table tr td
+{ background: #3B3B3B;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;}
+  
+table tr td
+{ background: #F0EFE2;
+  color: #47433F;
+  border-top: 1px solid #FFF;}</style>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Heart<span class="logo_colour">Disease</span></a></h1>
+          <h2>Team #LastRow</h2>
+        </div>
+      </div>
+      <div id="menubar">
+          <ul id="menu">
+              <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+              <li class="selected"><a href="index.html">Home</a></li>
+              <li><a href="/ETL">ETL Process</a></li>
+              <li><a href="/MPL">Machine Learning Process</a></li>
+              <li><a href="/Models">Models</a></li>
+              <li><a href="/Demo">Demo</a></li>
+            </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        
+            </head>
+            <body>
+            <h1>Machine Learning Models</h1>
+            <p>We utilized the following 6 machine learning classification models: K Nearest Neighbors (KNN), Neural Network, XG Boost, Support Vector Classifier (SVC), Logistic Regression, and Random Forest. To check the accuracy of each model, we have included the ROC Curve, a table with Classification Report data, and the Confusion Matrix. The models are in order based on their AUC Score. The AUC is the area under the ROC curve. This score gives us a good idea of how well the model performs.</p>
+            <div class="container-fluid">
+                <h1>XG Boost</h1>
+                <h2>AUC Score: 80.843%</h2>
+                <div class="row">
+                  <div class="col-sm-4" style="background-color:white;">
+                      <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/ROC_Curve_XGBoost.png?raw=true" alt="XG Boost ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                  </div>
+                  <div class="col-sm-4" style="background-color:white;">
+                      <table border="1" class="dataframe">
+                          <thead>
+                            <tr style="text-align: right;">
+                              <th></th>
+                              <th>f1-score</th>
+                              <th>precision</th>
+                              <th>recall</th>
+                              <th>support</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>negative</th>
+                              <td>0.754730</td>
+                              <td>0.723028</td>
+                              <td>0.789339</td>
+                              <td>8592.000000</td>
+                            </tr>
+                            <tr>
+                              <th>positive</th>
+                              <td>0.730100</td>
+                              <td>0.767113</td>
+                              <td>0.696495</td>
+                              <td>8560.000000</td>
+                            </tr>
+                            <tr>
+                              <th>accuracy</th>
+                              <td>0.743004</td>
+                              <td>0.743004</td>
+                              <td>0.743004</td>
+                              <td>0.743004</td>
+                            </tr>
+                            <tr>
+                              <th>macro avg</th>
+                              <td>0.742415</td>
+                              <td>0.745070</td>
+                              <td>0.742917</td>
+                              <td>17152.000000</td>
+                            </tr>
+                            <tr>
+                              <th>weighted avg</th>
+                              <td>0.742438</td>
+                              <td>0.745029</td>
+                              <td>0.743004</td>
+                              <td>17152.000000</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                  </div>
+                  <div class="col-sm-4" style="background-color:white;">
+                      <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/Confusion_Matrix_XGB.png?raw=true" alt="Confusion Matrix XG Boost" style='height: 100%; width: 100%; object-fit: contain'/>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                  <h1>K Nearest Neighbor</h1>
+                  <h2>AUC Score: 80.710%</h2>
+                  <div class="row">
+                    <div class="col-sm-4" style="background-color:white;">
+                        <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/ROC_Curve_KNN.png?raw=true" alt="KNN ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                    </div>
+                    <div class="col-sm-4" style="background-color:white;">
+                        <table border="1" class="dataframe">
+                            <thead>
+                              <tr style="text-align: right;">
+                                <th></th>
+                                <th>f1-score</th>
+                                <th>precision</th>
+                                <th>recall</th>
+                                <th>support</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>negative</th>
+                                <td>0.750165</td>
+                                <td>0.710921</td>
+                                <td>0.793994</td>
+                                <td>8592.000000</td>
+                              </tr>
+                              <tr>
+                                <th>positive</th>
+                                <td>0.718044</td>
+                                <td>0.765749</td>
+                                <td>0.675935</td>
+                                <td>8560.000000</td>
+                              </tr>
+                              <tr>
+                                <th>accuracy</th>
+                                <td>0.735075</td>
+                                <td>0.735075</td>
+                                <td>0.735075</td>
+                                <td>0.735075</td>
+                              </tr>
+                              <tr>
+                                <th>macro avg</th>
+                                <td>0.734105</td>
+                                <td>0.738335</td>
+                                <td>0.734964</td>
+                                <td>17152.000000</td>
+                              </tr>
+                              <tr>
+                                <th>weighted avg</th>
+                                <td>0.734135</td>
+                                <td>0.738284</td>
+                                <td>0.735075</td>
+                                <td>17152.000000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="col-sm-4" style="background-color:white;">
+                        <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/Confusion_Matrix_KNN.png?raw=true" alt="Confusion Matrix KNN" style='height: 100%; width: 100%; object-fit: contain'/>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                    <h1>Random Forest</h1>
+                    <h2>AUC Score: 79.754%</h2>
+                    <div class="row">
+                      <div class="col-sm-4" style="background-color:white;">
+                          <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/ROC_Curve_RF.png?raw=true" alt="Random Forest ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                      </div>
+                      <div class="col-sm-4" style="background-color:white;">
+                          <table border="1" class="dataframe">
+                              <thead>
+                                <tr style="text-align: right;">
+                                  <th></th>
+                                  <th>f1-score</th>
+                                  <th>precision</th>
+                                  <th>recall</th>
+                                  <th>support</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>no-attack</th>
+                                  <td>0.746280</td>
+                                  <td>0.723448</td>
+                                  <td>0.770601</td>
+                                  <td>8592.000000</td>
+                                </tr>
+                                <tr>
+                                  <th>attack</th>
+                                  <td>0.728140</td>
+                                  <td>0.753625</td>
+                                  <td>0.704322</td>
+                                  <td>8560.000000</td>
+                                </tr>
+                                <tr>
+                                  <th>accuracy</th>
+                                  <td>0.737523</td>
+                                  <td>0.737523</td>
+                                  <td>0.737523</td>
+                                  <td>0.737523</td>
+                                </tr>
+                                <tr>
+                                  <th>macro avg</th>
+                                  <td>0.737210</td>
+                                  <td>0.738537</td>
+                                  <td>0.737461</td>
+                                  <td>17152.000000</td>
+                                </tr>
+                                <tr>
+                                  <th>weighted avg</th>
+                                  <td>0.737227</td>
+                                  <td>0.738509</td>
+                                  <td>0.737523</td>
+                                  <td>17152.000000</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                      </div>
+                      <div class="col-sm-4" style="background-color:white;">
+                          <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/Confusion_Matrix_RF.png?raw=true" alt="Confusion Matrix Random Forest" style='height: 100%; width: 100%; object-fit: contain'/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid">
+                      <h1>Neural Network</h1>
+                      <h2>AUC Score: 79.335%</h2>
+                      <div class="row">
+                        <div class="col-sm-4" style="background-color:white;">
+                            <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/ROC_Curve_NN.png?raw=true" alt="Neural Network ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                        </div>
+                        <div class="col-sm-4" style="background-color:white;">
+                            <table border="1" class="dataframe">
+                                <thead>
+                                  <tr style="text-align: right;">
+                                    <th></th>
+                                    <th>f1-score</th>
+                                    <th>precision</th>
+                                    <th>recall</th>
+                                    <th>support</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th>No Attack</th>
+                                    <td>0.738331</td>
+                                    <td>0.722210</td>
+                                    <td>0.755189</td>
+                                    <td>8672.000000</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Attack</th>
+                                    <td>0.719754</td>
+                                    <td>0.737382</td>
+                                    <td>0.702948</td>
+                                    <td>8480.000000</td>
+                                  </tr>
+                                  <tr>
+                                    <th>accuracy</th>
+                                    <td>0.729361</td>
+                                    <td>0.729361</td>
+                                    <td>0.729361</td>
+                                    <td>0.729361</td>
+                                  </tr>
+                                  <tr>
+                                    <th>macro avg</th>
+                                    <td>0.729043</td>
+                                    <td>0.729796</td>
+                                    <td>0.729069</td>
+                                    <td>17152.000000</td>
+                                  </tr>
+                                  <tr>
+                                    <th>weighted avg</th>
+                                    <td>0.729147</td>
+                                    <td>0.729711</td>
+                                    <td>0.729361</td>
+                                    <td>17152.000000</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="col-sm-4" style="background-color:white;">
+                            <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/Confusion_Matrix_NN.png?raw=true" alt="Confusion Matrix NN" style='height: 100%; width: 100%; object-fit: contain'/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container-fluid">
+                        <h1>Logistic Regression</h1>
+                        <h2>AUC Score: 78.349%</h2>
+                        <div class="row">
+                          <div class="col-sm-4" style="background-color:white;">
+                              <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/ROC_Curve_LogReg.png?raw=true" alt="Logistic Regression ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                          </div>
+                          <div class="col-sm-4" style="background-color:white;">
+                              <table border="1" class="dataframe">
+                                  <thead>
+                                    <tr style="text-align: right;">
+                                      <th></th>
+                                      <th>f1-score</th>
+                                      <th>precision</th>
+                                      <th>recall</th>
+                                      <th>support</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th>No-Attack</th>
+                                      <td>0.739052</td>
+                                      <td>0.704640</td>
+                                      <td>0.776997</td>
+                                      <td>8677.000000</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Attack</th>
+                                      <td>0.703531</td>
+                                      <td>0.744858</td>
+                                      <td>0.666549</td>
+                                      <td>8475.000000</td>
+                                    </tr>
+                                    <tr>
+                                      <th>accuracy</th>
+                                      <td>0.722423</td>
+                                      <td>0.722423</td>
+                                      <td>0.722423</td>
+                                      <td>0.722423</td>
+                                    </tr>
+                                    <tr>
+                                      <th>macro avg</th>
+                                      <td>0.721291</td>
+                                      <td>0.724749</td>
+                                      <td>0.721773</td>
+                                      <td>17152.000000</td>
+                                    </tr>
+                                    <tr>
+                                      <th>weighted avg</th>
+                                      <td>0.721500</td>
+                                      <td>0.724512</td>
+                                      <td>0.722423</td>
+                                      <td>17152.000000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                          <div class="col-sm-4" style="background-color:white;">
+                              <img src="" alt="Confusion Matrix Logistic Regression" style='height: 100%; width: 100%; object-fit: contain'/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container-fluid">
+                          <h1>Support Vector Classifier</h1>
+                          <h2>AUC Score: %</h2>
+                          <div class="row">
+                            <div class="col-sm-4" style="background-color:white;">
+                                <img src="" alt="SVC ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                            </div>
+                            <div class="col-sm-4" style="background-color:white;">
+                                
+                            </div>
+                            <div class="col-sm-4" style="background-color:white;">
+                                <img src="" alt="Confusion Matrix SVC" style='height: 100%; width: 100%; object-fit: contain'/>
+                            </div>
+                          </div>
+                        </div>
+ 
+    </div>
+  </div>
+  <div id="footer">
+  </div>
+</body>
+</html>
