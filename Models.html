@@ -8,7 +8,6 @@
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="/style/style.css" title="style" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 </head>
 <style>
 html
@@ -333,8 +332,8 @@ table tr td
             </head>
             <body>
             <h1>Machine Learning Models</h1>
-            <p>We utilized the following 6 machine learning classification models: K Nearest Neighbors (KNN), Neural Network, XG Boost, Support Vector Classifier (SVC), Logistic Regression, and Random Forest. To check the accuracy of each model, we have included the ROC Curve, a table with Classification Report data, and the Confusion Matrix. The models are in order based on their AUC Score. The AUC is the area under the ROC curve. This score gives us a good idea of how well the model performs.</p>
-            <div class="container-fluid">
+            <p>We utilized the following 7 machine learning classification models: K Nearest Neighbors (KNN), Multinomial Naive Bayes, Neural Network, XG Boost, Support Vector Classifier (SVC), Logistic Regression, and Random Forest. To check the accuracy of each model, we have included the ROC Curve, a table with Classification Report data, and the Confusion Matrix. The models are in order based on their AUC Score. The AUC is the area under the ROC curve. This score gives us a good idea of how well the model performs.</p>
+              <div class="container-fluid">
                 <h1>XG Boost</h1>
                 <h2>AUC Score: 80.843%</h2>
                 <div class="row">
@@ -640,7 +639,7 @@ table tr td
                                 </table>
                           </div>
                           <div class="col-sm-4" style="background-color:white;">
-                              <img src="" alt="Confusion Matrix Logistic Regression" style='height: 100%; width: 100%; object-fit: contain'/>
+                              <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/Confusion_Matrix_LR.png?raw=true" alt="Confusion Matrix Logistic Regression" style='height: 100%; width: 100%; object-fit: contain'/>
                           </div>
                         </div>
                       </div>
@@ -659,7 +658,68 @@ table tr td
                             </div>
                           </div>
                         </div>
- 
+                        <div class="container-fluid">
+                            <h1>Multinomial Naive Bayes</h1>
+                            <h2>AUC Score: 75.515%</h2>
+                            <div class="row">
+                              <div class="col-sm-4" style="background-color:white;">
+                                  <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/ROC_Curve_NB.png?raw=true" alt="Naive Bayes ROC" style='height: 100%; width: 100%; object-fit: contain'/>
+                              </div>
+                              <div class="col-sm-4" style="background-color:white;">
+                                  <table border="1" class="dataframe">
+                                      <thead>
+                                        <tr style="text-align: right;">
+                                          <th></th>
+                                          <th>f1-score</th>
+                                          <th>precision</th>
+                                          <th>recall</th>
+                                          <th>support</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>no-attack</th>
+                                          <td>0.737805</td>
+                                          <td>0.679436</td>
+                                          <td>0.807146</td>
+                                          <td>8592.000000</td>
+                                        </tr>
+                                        <tr>
+                                          <th>attack</th>
+                                          <td>0.682103</td>
+                                          <td>0.761411</td>
+                                          <td>0.617757</td>
+                                          <td>8560.000000</td>
+                                        </tr>
+                                        <tr>
+                                          <th>accuracy</th>
+                                          <td>0.712628</td>
+                                          <td>0.712628</td>
+                                          <td>0.712628</td>
+                                          <td>0.712628</td>
+                                        </tr>
+                                        <tr>
+                                          <th>macro avg</th>
+                                          <td>0.709954</td>
+                                          <td>0.720423</td>
+                                          <td>0.712452</td>
+                                          <td>17152.000000</td>
+                                        </tr>
+                                        <tr>
+                                          <th>weighted avg</th>
+                                          <td>0.710006</td>
+                                          <td>0.720347</td>
+                                          <td>0.712628</td>
+                                          <td>17152.000000</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>   
+                              </div>
+                              <div class="col-sm-4" style="background-color:white;">
+                                  <img src="https://github.com/kgouldthorpe/Final_Project/blob/master/Confusion_Matrix_NB.png?raw=true" alt="Confusion Matrix Naive Bayes" style='height: 100%; width: 100%; object-fit: contain'/>
+                              </div>
+                            </div>
+                          </div>
     </div>
   </div>
   <div id="footer">
